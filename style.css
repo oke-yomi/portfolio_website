@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --pri_color:#e29032;
+    --pri_color:#f9ca24;
     --sec_color: #0b9917;
     --black: #111;
     --dark_grey: #333;
@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:var(--white);
+    background:var(--black);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -69,8 +69,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--dark_grey);
-    color:var(--white);
+    background:var(--white);
     letter-spacing: 3px;
 }
 
@@ -79,7 +78,6 @@ section{
     font-size: 2rem;
     margin: 6rem 0 3rem;
     padding:1rem;
-    font-weight: bolder;
 }
 
 header{
@@ -159,7 +157,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-flow: column;
     padding:0 15rem;
-    border-bottom: .1rem solid rgba(105, 105, 105, 0.267);
+    border-bottom: .1rem solid rgba(155, 155, 155, 0.274);
 }
 
 .home .intro {
@@ -169,12 +167,12 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color: var(--dark_grey);
+    color: var(--white);
 }
 
 .home h1{
     font-size:5rem;
-    color:var(--dark_grey);
+    color:var(--white);
 }
 
 .home h1 span{
@@ -183,7 +181,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:rgb(117, 117, 117);
+    color:rgb(160, 160, 160);
     padding: 1rem 0;
 }
 
@@ -205,11 +203,11 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color:var(--pri_color);
     padding:1rem 0;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .about .row .info h3 span{
-    color:var(--dark_grey);
+    color:var(--white);
     padding:0 .5rem;
 }
 
@@ -301,11 +299,12 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding:1.5rem;
     margin:1rem 0;
-    background:#696969;
+    background: #3a3a3a;
     color: var(--white);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
+    border-radius: 5px;
 }
 
 .contact .row form .box::placeholder{
@@ -320,7 +319,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:var(--dark_grey);
+    color:var(--white);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -329,7 +328,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:var(--dark_grey);
+    color:var(--white);
     padding:1rem 0;
     font-weight: normal;
 }
