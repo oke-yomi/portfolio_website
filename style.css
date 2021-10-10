@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --pri_color:#f9ca24;
-    --sec_color: #3fb849;
+    --pri_color:#e29032;
+    --sec_color: #0b9917;
+    --black: #111;
+    --dark_grey: #333;
+    --white: #fcfcfc;
 }
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none; 
+    border:none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
@@ -38,7 +43,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:var(--white);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -50,8 +55,8 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
+    background:var(--pri_color);
+    color:var(--dark_grey);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -64,21 +69,9 @@ section{
 }
 
 .btn:hover{
-    background:var(--pri_color);
-    color:#333;
-}
-
-.heading{
-    text-align: center;
-    margin:0 6rem;
-    font-size: 4rem;
-    padding:1rem;
-    border-bottom: .1rem solid #fff4;
-    color:#fff;
-}
-
-.heading span{
-    color:var(--pri_color);
+    background:var(--dark_grey);
+    color:var(--white);
+    letter-spacing: 3px;
 }
 
 .intro {
@@ -86,11 +79,13 @@ section{
     font-size: 2rem;
     margin: 6rem 0 3rem;
     padding:1rem;
+    font-weight: bolder;
 }
 
 header{
     position: fixed;
-    top:0; left:0;
+    top:0; 
+    left:0;
     z-index: 1000;
     height:100%;
     width:35rem;
@@ -151,7 +146,7 @@ header .navbar ul li a:hover{
     position: fixed;
     top:2rem; right:2rem;
     background:#333;
-    color:#fff;
+    color: var(--white);
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
@@ -164,7 +159,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-flow: column;
     padding:0 15rem;
-    border-bottom: .1rem solid #fff4;
+    border-bottom: .1rem solid rgba(105, 105, 105, 0.267);
 }
 
 .home .intro {
@@ -174,12 +169,12 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:#fff;
+    color: var(--dark_grey);
 }
 
 .home h1{
     font-size:5rem;
-    color:#fff;
+    color:var(--dark_grey);
 }
 
 .home h1 span{
@@ -188,7 +183,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:#eee;
+    color:rgb(117, 117, 117);
     padding: 1rem 0;
 }
 
@@ -210,11 +205,11 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color:var(--pri_color);
     padding:1rem 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    color:var(--dark_grey);
     padding:0 .5rem;
 }
 
@@ -306,8 +301,8 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding:1.5rem;
     margin:1rem 0;
-    background:#3333;
-    color:#fff;
+    background:#696969;
+    color: var(--white);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -315,6 +310,7 @@ header .navbar ul li a:hover{
 
 .contact .row form .box::placeholder{
     text-transform: capitalize;
+    color: var(--white);
 }
 
 .contact .row form .message{
@@ -324,7 +320,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#fff;
+    color:var(--dark_grey);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -333,7 +329,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    color:var(--dark_grey);
     padding:1rem 0;
     font-weight: normal;
 }
